@@ -1,13 +1,12 @@
-import './DetailPage.css';
-import { useLocation } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import './NewsArticle.css';
 
-function DetailPage() {
 
-    let location = useLocation();
-    let article = location.userProps?.articleLink;
+function NewsArticle(props) {
+
 
     document.addEventListener("DOMContentLoaded", function () {
-        var lazyloadImages = document.querySelectorAll("img.articleImage");
+        var lazyloadImages = document.querySelectorAll("img.lazy");
         var lazyloadThrottleTimeout;
 
         function lazyload() {
@@ -23,7 +22,7 @@ function DetailPage() {
                         img.classList.remove('lazy');
                     }
                 });
-                if (lazyloadImages.length === 0) {
+                if (lazyloadImages.length == 0) {
                     document.removeEventListener("scroll", lazyload);
                     window.removeEventListener("resize", lazyload);
                     window.removeEventListener("orientationChange", lazyload);
@@ -37,20 +36,21 @@ function DetailPage() {
     });
 
     return (
-        <div className="detailPage" >
-            <div className="articleTitleText">{article?.title}</div>
-            <div className="imageContainer">
-                <img alt="articleImage" classname="articleImage" src={article?.imageUrl}></img>
-            </div>
-            <div className="articleDescription">{article?.description}</div>
-            <div className="articleExpertComment">
-                <h3 className="expertComment">Expert Comment</h3>
-                {article?.expertComment}</div>
-        </div>
+        <div className='newsArticle'>
+            <div className='newsArticleContainer'>
+                <div className='newsArticleImage'>
+                    <img alt="articleImage" className="lazy" src={props.value.imageUrl} />
+                </div>
+                <div className='linkContainer'>
+                    <Link to={{ pathname: `/detail_page/${props.value.id}`, userProps: { articleLink: props.value } }} className="articleTitle">
+                        {props.value.title}
+                    </Link>
+                </div>
 
+            </div>
+        </div>
     )
 }
-export default DetailPage;
-
+export default NewsArticle;
 
 

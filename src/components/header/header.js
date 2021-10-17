@@ -5,7 +5,8 @@ function Header() {
     return (
         <div>
             <header>
-                <NavLink className="headerLink_left" to='./detail_page'>SHARETRADE.<span className="headerLink_right">COM</span></NavLink>
+                <NavLink className="headerLink_left" to='/articles'>SHARETRADE.
+                    <span className="headerLink_right">COM</span></NavLink>
             </header>
         </div >
     )

@@ -1,0 +1,50 @@
+.detailPage {
+    background-color: #839695;
+    min-height: calc(100vh - 83px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 0px 121px;
+}
+
+.articleTitleText {
+    width: 1276px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47, 48px;
+    margin: 64px 0px 5px 0px;
+}
+
+.imageContainer {
+    display: flex;
+    width: 1276px;
+    min-height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.articleDescription {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22, 42px;
+    color: #000000;
+}
+
+.articleExpertComment {
+    min-height: 200px;
+    width: 1276px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18, 46px;
+    padding: 18px 19px 43px 35px;
+    margin: 40px 0px 96px 0px;
+}
+
+.expertComment {
+    margin-bottom: 20px;
+}

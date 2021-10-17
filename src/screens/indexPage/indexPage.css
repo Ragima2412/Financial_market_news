@@ -1,0 +1,12 @@
+.indexPage {
+    background-color: #839695;
+    height: max-content-83px;
+    padding: 40px 53px 0px 53px;
+}
+
+.indexPage_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 38px;
+}
