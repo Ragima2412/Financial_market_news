@@ -47,7 +47,6 @@ function DetailPage() {
                 <h3 className="expertComment">Expert Comment</h3>
                 {article?.expertComment}</div>
         </div>
-
     )
 }
 export default DetailPage;
