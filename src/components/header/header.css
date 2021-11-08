@@ -1,7 +1,7 @@
 header {
     width: 100%;
     height: 83px;
-    background-color: #112B3E;
+    background-color: #112b3e;
     padding: 23px 0px 12px 27px;
 }
 
@@ -10,8 +10,9 @@ header {
     line-height: 47, 48px;
     font-weight: 700;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
 }
+
 .headerLink_right {
     font-size: 24px;
     line-height: 31, 65px;

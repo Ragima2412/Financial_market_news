@@ -19,14 +19,14 @@
 .lazy {
     width: 420px;
     height: 299px;
-    background-color: #112B3E;
+    background-color: #112b3e;
 }
 
 .linkContainer {
     width: 420px;
     height: 151px;
-    background-color: #112B3E;
-    color: #FFFFFF;
+    background-color: #112b3e;
+    color: #ffffff;
     text-align: center;
     padding: 10px 10px;
 }
@@ -37,7 +37,7 @@
     font-weight: 700;
     margin-bottom: 5px;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .urlLink {

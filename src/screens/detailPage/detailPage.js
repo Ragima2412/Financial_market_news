@@ -42,7 +42,7 @@ function DetailPage() {
             <div className="imageContainer">
                 <img alt="articleImage" classname="articleImage" src={article?.imageUrl}></img>
             </div>
-            <div className="articleDescription">{article?.description}</div>
+            <div className="articleDescription" >{article?.description}</div>
             <div className="articleExpertComment">
                 <h3 className="expertComment">Expert Comment</h3>
                 {article?.expertComment}</div>
@@ -50,6 +50,5 @@ function DetailPage() {
     )
 }
 export default DetailPage;
-
 
 

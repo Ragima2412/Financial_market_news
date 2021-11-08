@@ -33,7 +33,6 @@ const getdata = async () => {
 }
 
 getdata();
-console.log("Ragima", articles)
 
 export const Context = React.createContext({ articles: articles });
 
